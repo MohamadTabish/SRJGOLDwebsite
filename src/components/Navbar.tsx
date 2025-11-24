@@ -13,7 +13,7 @@ export default function Navbar() {
             <div className={styles.logoContainer}>
                 <Link href="/">
                     <Image
-                        src="/images/Logo.jpeg"
+                        src="/images/Logo_New.jpeg"
                         alt="SRJ GOLD Logo"
                         width={60}
                         height={60}
