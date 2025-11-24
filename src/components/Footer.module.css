@@ -1,0 +1,52 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 4rem 2rem 1rem;
+    margin-top: auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h3 {
+    color: #B8860B;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.section h4 {
+    color: #DAA520;
+    margin-bottom: 1rem;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.section a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.section a:hover {
+    color: #B8860B;
+}
+
+.bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+    color: #666;
+}
