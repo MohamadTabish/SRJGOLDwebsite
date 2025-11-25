@@ -11,16 +11,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    padding-top: 120px;
-    /* Space for fixed navbar */
+    padding: 1.5rem;
+    padding-top: 100px;
     width: 100%;
     box-sizing: border-box;
 }
 
 .card {
     background: white;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 12px;
     width: 100%;
     max-width: 500px;
@@ -28,20 +27,19 @@
     text-align: center;
     border: 1px solid #eaeaea;
     margin: 0 auto;
-    /* Ensure centering */
 }
 
 .card h1 {
     color: #333;
     margin-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 700;
 }
 
 .card p {
     color: #666;
     margin-bottom: 2rem;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
 }
 
 .form {
@@ -49,7 +47,6 @@
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
-    /* Ensure form takes full width of card */
 }
 
 .inputGroup {
@@ -62,7 +59,7 @@
     margin-bottom: 0.5rem;
     color: #444;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: clamp(0.85rem, 1.6vw, 0.9rem);
 }
 
 .inputGroup input {
@@ -70,10 +67,11 @@
     padding: 0.8rem 1rem;
     border: 1px solid #ddd;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
     transition: border-color 0.2s ease;
     box-sizing: border-box;
     background-color: #fff;
+    min-height: 44px;
 }
 
 .inputGroup input:focus {
@@ -88,13 +86,13 @@
     padding: 1rem;
     border: none;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: clamp(0.95rem, 1.8vw, 1rem);
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.2s ease;
     margin-top: 1rem;
     width: 100%;
-    /* Full width button */
+    min-height: 48px;
 }
 
 .button:hover {
@@ -103,7 +101,7 @@
 
 .footer {
     margin-top: 2rem;
-    font-size: 0.9rem;
+    font-size: clamp(0.85rem, 1.6vw, 0.9rem);
     color: #666;
 }
 
@@ -115,4 +113,70 @@
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+        padding-top: 90px;
+    }
+
+    .card {
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+    .card h1 {
+        margin-bottom: 0.4rem;
+    }
+
+    .card p {
+        margin-bottom: 1.5rem;
+    }
+
+    .form {
+        gap: 1.25rem;
+    }
+
+    .inputGroup label {
+        margin-bottom: 0.4rem;
+    }
+
+    .inputGroup input {
+        padding: 0.75rem 0.9rem;
+    }
+
+    .button {
+        padding: 0.9rem;
+        margin-top: 0.75rem;
+    }
+
+    .footer {
+        margin-top: 1.5rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .container {
+        padding: 2rem;
+        padding-top: 120px;
+    }
+
+    .card {
+        padding: 2.5rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .container {
+        padding: 2rem;
+        padding-top: 120px;
+    }
+
+    .card {
+        padding: 3rem;
+    }
 }
