@@ -23,7 +23,7 @@ export default function Navbar() {
             <div className={styles.logoContainer}>
                 <Link href="/" onClick={closeMenu}>
                     <Image
-                        src="/images/Logo_New.jpeg"
+                        src="/images/SRJ_Logo_TM.jpeg"
                         alt="SRJ GOLD Logo"
                         width={60}
                         height={60}
@@ -31,7 +31,7 @@ export default function Navbar() {
                     />
                 </Link>
                 <Link href="/" className={styles.brandName} onClick={closeMenu}>
-                    SRJ GOLD
+                    SRJ GOLD<sup style={{ fontSize: '0.5em', marginLeft: '2px' }}>TM</sup>
                 </Link>
             </div>
 

@@ -10,7 +10,7 @@ export default function Home() {
             <Navbar />
 
             <section className={styles.hero}>
-                <h1 className={styles.title}>SRJ GOLD SPICES</h1>
+                <h1 className={styles.title}>SRJ GOLD MASALA</h1>
                 <p className={styles.subtitle}>
                     Experience the authentic taste of tradition with our premium collection of hand-picked spices.
                     Elevate your culinary journey with the finest ingredients.

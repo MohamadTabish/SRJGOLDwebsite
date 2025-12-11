@@ -99,6 +99,24 @@
     height: 220px;
     width: 100%;
     overflow: hidden;
+    background: radial-gradient(ellipse at center, rgba(139, 69, 19, 0.3) 0%, rgba(0, 0, 0, 0.95) 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 30% 30%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 70% 70%, rgba(218, 165, 32, 0.08) 0%, transparent 50%);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .imageContainer::after {
@@ -109,6 +127,7 @@
     right: 0;
     height: 100px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 2;
 }
 
 .content {
