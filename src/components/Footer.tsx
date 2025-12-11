@@ -22,8 +22,8 @@ export default function Footer() {
                     <h4>Contact</h4>
                     <p>UNITED TRADING COMPANY</p>
                     <p>APMC YARD, BYADGI Karnataka INDIA</p>
-                    <p>Email: info@srjgold.com</p>
-                    <p>Phone: +91 123 456 7890</p>
+                    <p>Email: srjgoldmasala@gmail.com</p>
+                    <p>Phone: +91 9008272640</p>
                 </div>
                 <div className={styles.section}>
                     <h4>Food Safety Certified</h4>
