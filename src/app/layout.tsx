@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'SRJ GOLD Spices',
-  description: 'Premium Quality Spices',
+  title: 'SRJ GOLD Masala',
+  description: 'Premium Quality Masala',
   themeColor: '#B8860B',
   appleWebApp: {
     capable: true,
